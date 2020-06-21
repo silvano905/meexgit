@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "main.html" %}
+
+{% block serach_block %}
+{% endblock %}
+
+{% block body_block %}
+    <div class="jumbotron main_wrapper_jumbotron">
+        <div class="container">
+        <div class="jumbotron">
+            <div class="d-flex justify-content-center">
+
+  <form method="post">
+
+      {% csrf_token %}
+      <p>¿Estás segura que quieres borrar?</p>
+      <h6>{{ object }}</h6>
+
+<video class="embed-responsive embed-responsive-16by9" width="320" height="240" controls>
+  <source src="{{ object.post_pic.url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+      <button type="submit" class="btn btn-danger" style="margin: 5px">Borrar</button>
+
+  </form>
+            </div>
+        </div>
+        </div>
+</div>
+{% endblock %}
