@@ -28,7 +28,7 @@ SECRET_KEY = '2+-a(&hzm_x-kdu7p=tfm6)44%9v*u%tpis6=p8gif8+7*ac-3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://meexapp.herokuapp.com/"]
 
 
 # Application definition
